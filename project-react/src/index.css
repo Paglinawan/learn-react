@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ============
+ - Reset
+============ */
+/* ブラウザのUAスタイルシートのすべてのスタイルを削除します、displayは除く */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* box-sizingの優先値 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* リストのスタイル（箇条書き・番号）を削除します */
+ol,
+ul {
+  list-style: none;
+}
+
+/* 画像がコンテナを超えないようにするため */
+img {
+  max-width: 100%;
+}
+
+/* テーブルのセル間のスペースを削除します */
+table {
+  border-collapse: collapse;
+}
+
+/* ============
+ - Base
+============ */
+body {
+  padding: 32px;
+  background: #efefef;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-family: "Afacad", sans-serif;
+}
+.sec {
+  display: grid;
+  gap: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 32px 0.16;
+}
+.sec-heading {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.sec-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.sec-result {
+  color: orangered;
+  border-bottom: dashed 2px gold;
+  font-weight: 700;
+}
+.sec-btn {
+  padding: 4px 12px;
+  background: seagreen;
+  color: white;
+  font-size: 14px;
+  border-radius: 999px;
+  transition: all 0.3s;
+  box-shadow: 0 1px 0 darkslategray;
+  cursor: pointer;
+}
+.sec-btn:hover {
+  translate: 0 1px;
+  box-shadow: 0 0 0;
+}
+
+/* ============
+ - Utility
+============ */
+.text-center {
+  text-align: center;
 }
