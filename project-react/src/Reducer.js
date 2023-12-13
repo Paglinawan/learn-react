@@ -1,9 +1,23 @@
 import { useReducer } from "react";
 
 function Reducer() {
-  const [state, dispatch] = useReducer((prev) => ++prev, 0);
+  const [state, dispatch] = useReducer((prev, action) => {
+    switch (action) {
+      case "+":
+        return ++prev;
+
+      case "-":
+        return --prev;
+
+      default:
+        break;
+    }
+  }, 0);
   const countUp = () => {
-    dispatch();
+    dispatch("+");
+  };
+  const countDown = () => {
+    dispatch("-");
   };
 
   return (
@@ -12,7 +26,10 @@ function Reducer() {
       <div className="sec-content">
         <p className="sec-result">{state}</p>
         <button className="sec-btn" onClick={countUp}>
-          click
+          Up
+        </button>
+        <button className="sec-btn" onClick={countDown}>
+          Down
         </button>
       </div>
     </section>
