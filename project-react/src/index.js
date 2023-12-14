@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Reducer from "./Reducer";
+import Redux from "./redux-toolkit/Redux";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Reducer />
+    <Redux />
   </React.StrictMode>
 );
