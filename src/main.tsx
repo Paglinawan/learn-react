@@ -1,20 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./assets/css/pages/top.css";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./router/Router.tsx";
+import "./assets/css/pages/common.css";
+import Footer from "./Components/Footer.tsx";
+import Header from "./Components/Header.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <section className="intro">
-      <div className="l-inner">
-        <h1 className="intro-heading">My Apps</h1>
-        <ul className="intro-list">
-          <li className="intro-item">
-            <a href="#" className="intro-link">
-              TEST
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <BrowserRouter>
+      <Header />
+      <Router />
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );

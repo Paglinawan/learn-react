@@ -7,6 +7,7 @@ body {
   position: relative;
   z-index: 1;
   color: var(--text-100);
+  background: var(--bg-100);
   line-height: 1.8;
   font-size: 1.4rem;
   font-family: var(--font-base);

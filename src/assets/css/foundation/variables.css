@@ -3,16 +3,16 @@
     Meiryo, "Meiryo UI", sans-serif;
   --font-en: "Arial Black", sans-serif;
 
-  --primary-100: #d4eaf7;
-  --primary-200: #b6ccd8;
-  --primary-300: #3b3c3d;
-  --accent-100: #71c4ef;
-  --accent-200: #00668c;
-  --text-100: #1d1c1c;
-  --text-200: #313d44;
-  --bg-100: #fffefb;
-  --bg-200: #f5f4f1;
-  --bg-300: #cccbc8;
+  --primary-100: #ff7f50;
+  --primary-200: #dd6236;
+  --primary-300: #8f1e00;
+  --accent-100: #8b4513;
+  --accent-200: #ffd299;
+  --text-100: #000000;
+  --text-200: #2c2c2c;
+  --bg-100: #f7eedd;
+  --bg-200: #ede4d3;
+  --bg-300: #c4bcab;
 
   --space-xl: clamp(60px, 0.16vw, 120px);
   --space-lg: clamp(40px, 0.1vw, 80px);
