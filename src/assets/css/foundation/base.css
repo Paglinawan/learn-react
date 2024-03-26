@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(8px, 2.66666vw, 10px);
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  color: var(--text-100);
+  line-height: 1.8;
+  font-size: 1.4rem;
+  font-family: var(--font-base);
+  letter-spacing: 0.05em;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+sup {
+  font-size: 0.5em;
+  vertical-align: super;
+}
+
+summary {
+  display: block;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+a[href^="tel:"] {
+  pointer-events: none;
+  cursor: text;
+}

@@ -1,2 +1,5 @@
-# learn-react
-Learn basic and play sandbox
+## Summary
+
+- vite
+- React
+- TypeScript
